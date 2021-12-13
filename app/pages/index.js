@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import styles from '../styles/App.module.css'
+import Marketplace from '../components/Marketplace'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
 
       <main className={styles.container}>
         <Navbar />
+        <Marketplace />
       </main>
     </div>
   )
