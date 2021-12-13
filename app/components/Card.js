@@ -11,10 +11,12 @@ export default function Card(props) {
                 <h2>{props.title}</h2>
                 <Image width="100%" height="100%" src={props.img} alt="Image mon pote" />
                 <p style={{
-                    fontSize: '8px'
+                    fontSize: '12px'
                 }}>{props.desc}</p>
+                <div className={styles.line}></div>
                 <h3>{props.price}</h3>
-                <button style={{ color: 'white', backgroundColor: '#333', borderRadius: '30px', padding: '5px 30px', textTransform: 'uppercase' }} onClick={() => setIsBuy(!isBuy)}>Acheter</button>
+                <div className={styles.line}></div>
+                <button style={{ cursor: 'pointer', color: 'white', backgroundColor: '#333', borderRadius: '30px', padding: '5px 30px', textTransform: 'uppercase' }} onClick={() => setIsBuy(!isBuy)}>Acheter</button>
 
                 <div style={{ display: isBuy === true ? 'unset' : 'none' }}>
                     <p>Titre: {props.title}</p>
